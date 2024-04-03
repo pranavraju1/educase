@@ -1,0 +1,53 @@
+.signin{
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  .signin-heading{
+    font-size: 28px;
+    color: #1D2226;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  .signin-text{
+    color: #1D2226;
+    opacity: 0.6;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .input-elelments{
+    // background-color: pink;
+    padding-top:7.5px ;
+    position: relative;
+    margin-bottom: 14px;
+    .overlay-label{
+      position: absolute;
+      top: 0px;
+      left: 14px;
+      background-color: #F7F8F9;
+      font-size: 13px;
+      color: #6C25FF;
+      span{
+        color: red;
+      }
+    }
+    .inputElement{
+      height: 40px;
+      width: 100%;
+      border: 1px solid #CBCBCB;
+      border-radius: 6px;
+      background-color: transparent;
+      outline: none;
+      padding-left: 17.22px;
+      color: #1D2226;
+    }
+  }
+  .btn{
+    height: 46px;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    text-transform: none;
+    width: 100%
+  }
+}

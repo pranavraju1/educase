@@ -1,0 +1,28 @@
+.home{
+  // background-color: aqua;
+  position: absolute;
+  bottom: 41px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  width: 91%;
+  .home-heading{
+    font-size: 28px;
+    color: #1D2226;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .home-text{
+    color: #1D2226;
+    opacity: 0.6;
+    font-size: 18px;
+    margin-bottom: 29px;
+  }
+  .btn{
+    height: 46px;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    margin-bottom: 10px;
+    text-transform: none;
+  }
+}
