@@ -1,6 +1,7 @@
 import "./styles.scss";
 
 const Profile = () => {
+  // fetching profile details from session storage
   const userEmail = sessionStorage.getItem("email");
   const userName = sessionStorage.getItem("name");
   return (
@@ -18,8 +19,8 @@ const Profile = () => {
             {userName ? <>{userName}</> : <>Marry Doe</>}
           </p>
           <p className="user-email">
-          {userEmail ? <>{userEmail}</> : <>Marry@Gmail.Com</>} 
-            </p>
+            {userEmail ? <>{userEmail}</> : <>Marry@Gmail.Com</>}
+          </p>
         </div>
       </div>
       <p className="profile-text">

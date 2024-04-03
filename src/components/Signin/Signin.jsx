@@ -17,22 +17,28 @@ const Signin = () => {
       </p>
       <form>
         <div className="input-elelments">
-          <div className="overlay-label">
-            Email address
-          </div>
-          <input type="text" name="name" className="inputElement"  placeholder="Enter email address"/>
+          <div className="overlay-label">Email address</div>
+          <input
+            type="text"
+            name="name"
+            className="inputElement"
+            placeholder="Enter email address"
+          />
         </div>
         <div className="input-elelments">
-          <div className="overlay-label">
-            Password
-          </div>
-          <input type="text" name="name" className="inputElement"  placeholder="Enter password"/>
+          <div className="overlay-label">Password</div>
+          <input
+            type="text"
+            name="name"
+            className="inputElement"
+            placeholder="Enter password"
+          />
         </div>
         <Button
           variant="contained"
           className="btn"
           style={{ backgroundColor: "#CBCBCB" }}
-          onClick={()=>navigate('/profile')}
+          onClick={() => navigate("/profile")}
         >
           Login
         </Button>

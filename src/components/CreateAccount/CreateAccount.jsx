@@ -9,24 +9,28 @@ import { useState } from "react";
 import validator from "validator";
 const CreateAccount = () => {
   const radioStyle = {
+    //styling the radio button
     color: "#6C25FF",
   };
   const navigate = useNavigate();
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false); //to check if all inputs filled
   const [userEmail, setUserEmail] = useState("");
   const [userName, setUserName] = useState("");
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
     const form = event.target;
+
+    // If form is valid, navigate
     if (form.checkValidity()) {
-      // If form is valid, navigate
       setIsFormSubmitted(true);
-      if(!validator.isEmail(userEmail)){
-        return alert("Please enter a valid email")
+      // checking if email is valid or not
+      if (!validator.isEmail(userEmail)) {
+        return alert("Please enter a valid email");
       }
+      // storing name and email to display in profile page
       sessionStorage.setItem("name", userName);
       sessionStorage.setItem("email", userEmail);
-      navigate("/profile"); // Assuming 'navigate' is imported from somewhere
+      navigate("/profile");
     }
   };
   return (
@@ -129,7 +133,6 @@ const CreateAccount = () => {
           className="btn"
           type="submit"
           style={{ backgroundColor: "#6C25FF" }}
-          // onClick={()=>navigate('/profile')}
         >
           Create Account
         </Button>

@@ -7,12 +7,13 @@ const Home = () => {
     <div className="home">
       <p className="home-heading">Welcome to PopX</p>
       <p className="home-text">
-        Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,
+        Lorem ipsum dolor sit amet,
+        <br /> consectetur adipiscing elit,
       </p>
       <Button
         variant="contained"
         className="btn"
-        onClick={()=>navigate('/create-account')}
+        onClick={() => navigate("/create-account")}
         style={{ backgroundColor: "#6C25FF" }}
       >
         Create Account
@@ -20,7 +21,7 @@ const Home = () => {
       <Button
         variant="contained"
         className="btn"
-        onClick={()=>navigate('/signin')}
+        onClick={() => navigate("/signin")}
         style={{
           backgroundColor: "#6C25FF4B",
           color: "black",
